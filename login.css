@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 80vh;
+}
+
+.img {
+    flex-basis: 50%;
+    height: 100%;
+    background-image: linear-gradient(30deg, rgba(116, 14, 106, 0.7), rgba(109, 18, 93, 0.4)), url(./lady.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+.gif {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    animation: show;
+    animation-iteration-count: 2;
+    animation-duration: 10s;
+    background-size: cover;
+    z-index: -4;
+    display: none;
+    position: absolute;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+
+}
+
+button {
+    padding: 10px;
+    width: 80px;
+    background-color: #c485ec;
+    color: white;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+}
+
+@keyframes show {
+    0% {
+        display: block;
+        position: absolute;
+        z-index: 2333333333;
+    }
+
+    50% {}
+
+    100% {
+        z-index: 3232343;
+        opacity: 1;
+        display: none;
+    }
+}
+
+.login {
+    flex-basis: 50%;
+    width: 100%;
+    background-image: url(./flowers.png);
+    background-size: cover;
+    background-color: white;
+    height: 100%;
+    background-position-x: 228px;
+    background-position-y: 150px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid purple;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+input:focus {
+    border-bottom: 2px solid #3f0861;
+    border-collapse: collapse;
+}
+
+h2 {
+    font-family: 'Rokkitt', serif;
+    color: white;
+    font-size: 80px;
+}
+
+h3 {
+    font-family: 'Rokkitt', serif;
+    color: #c485ec;
+    font-size: 40px;
+    margin-top: -70px;
+    margin-bottom: 30px;
+}
+
+.box {
+    width: 20px;
+}
+
+:checked {
+    width: 15px;
+}
+
+.rem {
+    margin-top: 15px;
+    display: flex;
+}
+
+input {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    transition: .3s;
+    border-bottom: 2px solid #c485ec;
+    color: #4e206a;
+    padding: 5px;
+    outline: none;
+    width: 100%;
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    padding: 5%;
+    align-items: center;
+    background-image: linear-gradient(30deg, rgba(59, 8, 54, 0.5), rgba(230, 6, 189, 0.5)), url(./nature.jpg);
+    backdrop-filter: blur(8px);
+
+}
+
+@media (max-width:650px) {
+    .img {
+        display: none;
+    }
+
+    table {
+        border-radius: 20px
+    }
+
+    .login {
+        flex-basis: 100%;
+        border-radius: 20px
+    }
+
+    body {
+        padding: none;
+    }
+}

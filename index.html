@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img src="./dragon.png">
+    <marquee behavior="" height="60vh" width="100%" scrollamount="2" direction="down"> REGISTER NOW!</marquee>
+    <section class="register">
+        <table>
+            <form action="../php">
+                <tr>
+                    <td>
+                        <input type="text" name="first_name" placeholder="first_name" id="" required minlength="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="last_name" placeholder="last_name" id="" required minlength="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="tel" name="tel" placeholder="080-324-566-47"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}" id="" title="phone-number" required
+                            maxlength="14">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" name="email" placeholder="email" required id="">
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>
+                        <select name="" id="" required>
+                            <option value="0">gender</option>
+                            <option value="1">male</option>
+                            <option value="2">female</option>
+                        </select>
+                    </td>
+                </tr>
+
+
+
+                <tr>
+                    <td class="date">
+                        <p>date_of_birth</p>
+                        <input type="date" name="date_of_birth" placeholder="20/03/2001" id="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p> pick your favorite_color</p>
+                        <input type="color" name="favorite_color" id="color" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="btn">
+                        <button type="submit">register</button></br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Already have an account
+                        <a href="./login.html">login</a>
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </section>
+</body>
+
+</html>
